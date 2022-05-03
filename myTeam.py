@@ -82,7 +82,7 @@ class BaseCaptureAgent(CaptureAgent):
           bestDist = dist
       return bestAction
     
-    return random.choice(choice)
+    return random.choice(bestActions)
 
   def getSuccessor(self, gameState, action):
     """
